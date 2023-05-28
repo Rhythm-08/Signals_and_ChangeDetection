@@ -1,1 +1,8 @@
 <p>change-detection-ref works!</p>
+
+<h2>{{topicName}}</h2>
+<div *ngIf="isVisible" class="info">
+{{getInfo()}}
+</div>
+<app-channel [name]="name"></app-channel>
+<div>Created At: {{creationDate| date:'short'}}</div>
